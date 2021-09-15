@@ -20,5 +20,5 @@ export const Container = styled.div<ContainerProps>`
 export const DeleteButton = styled.div`
   display: inline-block;
   user-select: none;
-  padding: 0 5px;
+  padding-left: 5px;
 `;
