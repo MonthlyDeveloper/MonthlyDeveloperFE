@@ -11,8 +11,8 @@
 import { addDecorator } from "@storybook/react";
 import { withThemesProvider } from "storybook-addon-styled-component-theme";
 import { ThemeProvider } from "styled-components";
-import { theme } from "../styles/theme";
-import GlobalStyle from "../styles/GlobalStyle";
+import { theme } from "@styles/theme";
+import ResetStyle from "@styles/resetStyle";
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: { matchers: { color: /(background|color)$/i, date: /Date$/ } },
@@ -20,10 +20,10 @@ export const parameters = {
 export const decorators = [
   (Story) => (
     <>
-      <GlobalStyle />
+      <ResetStyle />
       <Story />
     </>
   ),
 ];
-const Themes = [theme];
+const Themes = [theme.light];
 addDecorator(withThemesProvider(Themes), ThemeProvider);
