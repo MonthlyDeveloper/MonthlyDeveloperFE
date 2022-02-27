@@ -9,11 +9,13 @@ interface ContainerProps {
 export const Container = styled.div<ContainerProps>`
   display: inline-block;
   background: ${({ bgColor }) => bgColor};
-  color: ${({ txtColor }) => txtColor};
-  margin-right: 4px;
-  padding: 3px 15px;
-  border-radius: 15px;
+  cursor: pointer;
+  margin: 2px 4px 2px 0;
+  padding: 2px 8px;
+  border-radius: 3px;
   border: 1px solid black;
+  font-size: ${({ theme }) => theme.fs12};
+  color: ${({ txtColor }) => txtColor};
   ${({ addStyle }) => addStyle}
 `;
 
