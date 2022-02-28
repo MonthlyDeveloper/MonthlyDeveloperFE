@@ -26,6 +26,6 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm install
-          npm run deploy-storybook -- --branch=develop --ci
+          npm run deploy-storybook -- --ci
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
