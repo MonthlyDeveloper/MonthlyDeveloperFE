@@ -96,16 +96,8 @@ const ResetStyle = createGlobalStyle`
     overflow-x: hidden;
   }
 
-
   html{
-    ${() =>
-      localStorage.getItem("theme") === "light"
-        ? css`
-            background-color: #fff;
-          `
-        : css`
-            background-color: #fff;
-          `}
+    background-color: #fff;
   }
 
   * {
@@ -117,43 +109,21 @@ const ResetStyle = createGlobalStyle`
       height: 4px;
       width: 3px;
     }
+    ::-webkit-scrollbar-track {
+      background: #333333;
+    }
 
-    ${() =>
-      localStorage.getItem("theme") === "light"
-        ? css`
-            ::-webkit-scrollbar-track {
-              background: #333333;
-            }
+    ::-webkit-scrollbar-thumb {
+      background: #4d4d4d;
+    }
 
-            ::-webkit-scrollbar-thumb {
-              background: #4d4d4d;
-            }
+    ::-webkit-scrollbar-track:horizontal {
+      background: #333333;
+    }
 
-            ::-webkit-scrollbar-track:horizontal {
-              background: #333333;
-            }
-
-            ::-webkit-scrollbar-thumb:horizontal {
-              background: #4d4d4d;
-            }
-          `
-        : css`
-            ::-webkit-scrollbar-track {
-              background: #333333;
-            }
-
-            ::-webkit-scrollbar-thumb {
-              background: #4d4d4d;
-            }
-
-            ::-webkit-scrollbar-track:horizontal {
-              background: #333333;
-            }
-
-            ::-webkit-scrollbar-thumb:horizontal {
-              background: #4d4d4d;
-            }
-          `}
+    ::-webkit-scrollbar-thumb:horizontal {
+      background: #4d4d4d;
+    }
   }
 
   ul,
