@@ -8,9 +8,13 @@
     "start": "next start",
     "lint": "next lint",
     "sb": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o docs-build",
+    "deploy-storybook": " storybook-to-ghpages",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "@storybook/storybook-deployer": "^2.8.10",
+    "gh-pages": "^3.2.3",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -39,9 +43,14 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
     "prettier": "^2.4.0",
     "react-docgen-typescript-loader": "^3.7.2",
     "storybook-addon-styled-component-theme": "^2.0.0",
     "typescript": "4.4.3"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }

@@ -1,7 +1,13 @@
-import "styled-components";
+import { CSSProp } from "styled-components";
+import { Theme } from "@styles/theme";
 
 declare module "styled-components" {
-  export interface DefaultTheme {
-    media: any;
+  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  export interface DefaultTheme extends Theme {}
+}
+
+declare module "react" {
+  interface Attributes {
+    css?: CSSProp | CSSObject;
   }
 }
