@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "@components/Button";
 import * as STC from "./Dialog.style";
 
 export type DialogProps = {
@@ -32,16 +33,19 @@ function Dialog({
           <p>{message}</p>
           <STC.Buttons>
             {onCancel && (
-              <STC.CancelButton onClick={onCancel}>
-                {cancelText}
-              </STC.CancelButton>
+              <Button
+                content={cancelText}
+                btnTheme="secondary"
+                disable={false}
+                handleClick={onCancel}
+              />
             )}
-            <STC.ConfirmButton
-              isDestructive={isDestructive}
-              onClick={onConfirm}
-            >
-              {confirmText}
-            </STC.ConfirmButton>
+            <Button
+              content={confirmText}
+              btnTheme="primary"
+              disable={false}
+              handleClick={onConfirm}
+            />
           </STC.Buttons>
         </STC.WhiteBox>
       </STC.CenterWrapper>

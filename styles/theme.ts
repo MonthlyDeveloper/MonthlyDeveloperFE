@@ -179,6 +179,7 @@ const lightColors = {
   fc01: "#263747", // White
   fc02: "#98A8B9",
   fc03: "#0078FF",
+  fc04: "#ffffff",
 
   // Line Color
   lc01: "#D7E2EB",
@@ -192,6 +193,10 @@ const lightColors = {
   bg02: "#DDDDDD",
   bg03: "#999999",
   bg04: "#888888",
+  bg05: "#e9ecf3",
+  bg06: "#d7e2eb",
+  bg07: "#007bff",
+  bg08: "#0069d9",
 
   // RGBA Background
   rgbaBg01: "rgba(34, 34, 36, 0)",
