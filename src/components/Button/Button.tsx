@@ -2,9 +2,13 @@ import React from "react";
 import * as STC from "./Button.style";
 
 interface IButtonProps {
+  /** Button text */
   content: string;
+  /** Button style */
   btnTheme: "primary" | "secondary";
+  /** Set disable */
   disable: boolean;
+  /** Click action */
   handleClick: () => any;
 }
 

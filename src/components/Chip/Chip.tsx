@@ -36,8 +36,6 @@ const Chip = ({
 Chip.defaultProps = {
   text: "Sample",
   type: "normal",
-  bgColor: "white",
-  txtColor: "black",
 };
 
 export default Chip;

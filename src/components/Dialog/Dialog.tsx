@@ -10,7 +10,6 @@ export type DialogProps = {
   cancelText?: string;
   onConfirm(): void;
   onCancel?(): void;
-  isDestructive?: boolean;
 };
 
 function Dialog({
@@ -20,7 +19,6 @@ function Dialog({
   cancelText = "CANCEL",
   onConfirm,
   onCancel,
-  isDestructive = false,
   visible,
 }: DialogProps) {
   if (!visible) return null;

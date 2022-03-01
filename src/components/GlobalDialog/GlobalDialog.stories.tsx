@@ -12,12 +12,12 @@ export default {
 
 const Template: ComponentStory<typeof GlobalDialog> = (arg) => {
   const { open } = useGlobalDialogActions();
-  const askLogout = () => {
+  const handleClick = () => {
     open(arg as DialogProps);
   };
   return (
     <>
-      <button type="button" onClick={askLogout}>
+      <button type="button" onClick={handleClick}>
         modal
       </button>
       <GlobalDialog />
@@ -25,9 +25,22 @@ const Template: ComponentStory<typeof GlobalDialog> = (arg) => {
   );
 };
 
-export const Primary = Template.bind({});
+export const OneButton = Template.bind({});
 
-Primary.args = {
+OneButton.args = {
+  title: "Opps",
+  message: "Sorry! Something went wrong.",
+  onConfirm: () => {
+    console.log("click!");
+  },
+  showCancel: false,
+  cancelText: "No",
+  confirmText: "OK",
+};
+
+export const TwoButton = Template.bind({});
+
+TwoButton.args = {
   title: "Sign out",
   message: "Do you want to sign out?",
   onConfirm: () => {

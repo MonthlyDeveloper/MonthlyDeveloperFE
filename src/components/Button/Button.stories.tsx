@@ -16,7 +16,7 @@ PrimaryEnable.args = {
   content: "Primary Button",
   btnTheme: "primary",
   disable: false,
-  handleClick: () => {},
+  handleClick: () => alert("Primary click!"),
 };
 
 export const PrimaryDisable = Template.bind({});
@@ -24,7 +24,7 @@ PrimaryDisable.args = {
   content: "Primary Button",
   btnTheme: "primary",
   disable: true,
-  handleClick: () => {},
+  handleClick: () => alert("Primary click!"),
 };
 
 export const SecondaryEnable = Template.bind({});
@@ -32,7 +32,7 @@ SecondaryEnable.args = {
   content: "Secondary Button",
   btnTheme: "secondary",
   disable: false,
-  handleClick: () => {},
+  handleClick: () => alert("Secondary click!"),
 };
 
 export const SecondaryDisable = Template.bind({});
@@ -40,5 +40,5 @@ SecondaryDisable.args = {
   content: "Secondary Button",
   btnTheme: "secondary",
   disable: true,
-  handleClick: () => {},
+  handleClick: () => alert("Secondary click!"),
 };
