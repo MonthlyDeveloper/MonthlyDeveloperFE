@@ -189,22 +189,9 @@ const lightColors = {
 
   // Background
   bg01: "#ffffff",
-  bg02: "#2a2a2e",
-  bg03: "#424247",
-  bg04: "#242429",
-  bg05: "#1b1b1e",
-  bg06: "#d2d61d",
-  bg07: "#1A1A1A",
-  bg08: "#8B8B8B",
-  bg09: "#FFFFFF",
-  bg10: "#CCCCCC",
-  bg11: "#333333",
-  bg12: "#7B7B7B",
-  bg13: "#707070",
-  bg14: "#888888",
-  bg15: "#DDDDDD",
-  bg16: "#999999",
-  bg17: "#000000",
+  bg02: "#DDDDDD",
+  bg03: "#999999",
+  bg04: "#888888",
 
   // RGBA Background
   rgbaBg01: "rgba(34, 34, 36, 0)",

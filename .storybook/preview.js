@@ -9,6 +9,7 @@
 // };
 
 import { addDecorator } from "@storybook/react";
+import { RecoilRoot } from "recoil";
 import { withThemesProvider } from "storybook-addon-styled-component-theme";
 import { ThemeProvider } from "styled-components";
 import { theme } from "@styles/theme";
@@ -20,8 +21,10 @@ export const parameters = {
 export const decorators = [
   (Story) => (
     <>
-      <ResetStyle />
-      <Story />
+      <RecoilRoot>
+        <ResetStyle />
+        <Story />
+      </RecoilRoot>
     </>
   ),
 ];

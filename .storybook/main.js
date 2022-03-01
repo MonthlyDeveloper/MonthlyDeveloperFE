@@ -22,6 +22,7 @@ module.exports = {
       "@components": path.resolve(__dirname, "../src/components"),
       "@assets": path.resolve(__dirname, "../src/assets"),
       "@styles": path.resolve(__dirname, "../styles"),
+      "@atoms": path.resolve(__dirname, "../src/atoms"),
     };
     return config;
   },
